@@ -58,17 +58,22 @@
         .logo {
             font-family: var(--font-serif);
             font-size: 1.6rem;
-            font-weight: 400; /* Regular weight for a classic look */
-            text-transform: none; /* Removed uppercase to match the generated image */
+            font-weight: 400; 
             text-decoration: none;
             color: var(--text-main);
             display: flex;
             flex-direction: column;
-            line-height: 1.1; /* Keeps the words tightly stacked */
+            align-items: center; /* Centers Group under Armanni */
+            line-height: 1; 
         }
 
         .logo span {
             display: block;
+        }
+
+        /* Makes the first letter of each word larger */
+        .logo span::first-letter {
+            font-size: 1.35em; 
         }
 
         nav a {
@@ -282,7 +287,7 @@
             <div class="grid">
                 <div class="card">
                     <div class="card-header">
-                        <img src="PinlyIconiOs.jpg" alt="Pinly Logo" class="app-icon" onerror="this.style.display='none'">
+                        <img src="pinly.jpg" alt="Pinly Logo" class="app-icon" onerror="this.style.display='none'">
                         <h3>Pinly</h3>
                     </div>
                     <p>A location-based reminder app for iOS. Drop a pin on the map and get a notification the moment you arrive. Built with a clean UI to solve the simple frustration of forgetting why you visited a specific location.</p>
@@ -311,7 +316,7 @@
                 <div class="card">
                     <span class="status-badge">In Development</span>
                     <div class="card-header">
-                        <img src="logo120.png" alt="Yupp Logo" class="app-icon" onerror="this.style.display='none'">
+                        <img src="yupp.png" alt="Yupp Logo" class="app-icon" onerror="this.style.display='none'">
                         <h3>YUPP</h3>
                     </div>
                     <p>A Flutter-based live auction and marketplace app. Yupp focuses on a video-first feed where sellers list items via short-form video cards and host live auctions with real-time bidding, integrated seamlessly with Stripe.</p>
@@ -320,7 +325,7 @@
                 <div class="card">
                     <span class="status-badge">In Development</span>
                     <div class="card-header">
-                        <img src="Gemini_Generated_Image_3yrw8k3yrw8k3yrw-removebg-preview.jpg" alt="Dejt Logo" class="app-icon" onerror="this.style.display='none'">
+                        <img src="dejt.jpg" alt="Dejt Logo" class="app-icon" onerror="this.style.display='none'">
                         <h3>Dejt</h3>
                     </div>
                     <p>An iOS dating app built in SwiftUI that flips the traditional model. Dejt forces real connection by prioritizing conversation—photos are blurred or hidden until a mutual "reveal" moment is triggered through chatting.</p>
