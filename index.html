@@ -188,6 +188,7 @@
             display: flex;
             gap: 1.2rem;
             margin-top: auto;
+            flex-wrap: wrap;
         }
 
         .card-links a {
@@ -294,6 +295,21 @@
         <section id="active">
             <h2 class="section-title">Active Portfolio</h2>
             <div class="grid">
+                
+                <div class="card">
+                    <span class="status-badge live" style="background-color: #e6f7eb; color: #2d8a4e;">Live</span>
+                    <div class="card-header">
+                        <img src="buried_logo.png" alt="Buried Logo" class="app-icon" onerror="this.style.display='none'">
+                        <h3>Buried</h3>
+                    </div>
+                    <p>A digital time capsule locked to the real world. Bury photos and notes at specific coordinates that can only be unlocked when you physically return to the exact spot. 100% private, on-device storage.</p>
+                    <div class="card-links">
+                        <a href="/buried/privacy">Privacy</a>
+                        <a href="/buried/terms">Terms</a>
+                        <a href="/buried/contact">Support</a>
+                    </div>
+                </div>
+
                 <div class="card">
                     <div class="card-header">
                         <img src="pinly.jpg" alt="Pinly Logo" class="app-icon" onerror="this.style.display='none'">
@@ -367,9 +383,9 @@
 
         // Simple Bot Protection / Email Obfuscation
         function secureContact() {
-            const user = "inquires";
+            const user = "alvin";
             const domain = "armannigroup.com";
-            const subject = encodeURIComponent("Website Inquiry");
+            const subject = encodeURIComponent("Website Inquiry: Armanni Group");
             window.location.href = `mailto:${user}@${domain}?subject=${subject}`;
         }
     </script>
